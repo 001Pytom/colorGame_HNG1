@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.guess {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.colorBox {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.colorOptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.colorOption {
+  width: 150px;
+  height: 120px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.newGameButton {
+  background-color: #f4f4f6;
+  color: f4f4f6;
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+}
+
+.correct {
+  animation: correctAnim 0.5s ease-in-out;
+  color: green;
+}
+
+@keyframes correctAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wrong {
+  animation: wrongAnim 0.3s ease-in-out;
+  color: red;
+}
+
+@keyframes wrongAnim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
