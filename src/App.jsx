@@ -1,7 +1,7 @@
 import { useState } from "react";
 import GameStatus from "./components/GameStatus";
 import ColorBox from "./components/ColorBox";
-import ColorOptions from "./components/colorOptions";
+import ColorOptions from "./components/ColorOptions";
 import NewGame from "./components/NewGame";
 
 const colors = ["red", "blue", "green", "yellow", "black", "purple"];
